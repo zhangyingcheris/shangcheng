@@ -1,0 +1,293 @@
+@charset "utf-8";
+.shopcart-main{
+    width:1190px;
+    min-height:280px;
+    height:auto!important;
+    height:280px;
+    margin:20px auto;
+}
+.box-sc-currAddress{
+    width:100%;
+    height:47px;
+    margin-bottom:30px;
+}
+.sc-currAddress{
+    width:700px;
+    height:47px;
+    background:url(../images/shopcart/cart-step.jpg) no-repeat;
+    float:right;
+}
+.sc-currProSum div{
+    float:left;
+    height:40px;
+    font-size:14px;
+    line-height:40px;
+}
+.sc-currProSum-down .toindexlook{
+    display:block;
+    width:100px;
+    height:30px;
+    color:#fff;
+    font-size:14px;
+    background:#d00;
+    border:1px solid #fff;
+    margin:30px auto 0;
+    border-radius:3px;
+    text-align:center;
+    line-height:30px;
+}
+.sc-currProSum-down .toindexlook:hover{
+    color:#333;
+    border:1px solid #d00;
+    background:#fff;
+}
+.sc-allchoice{
+    width:72px;
+    text-align:left;
+    padding-left:12px;
+}
+.sc-imgnth{
+    width:95px;
+}
+.sc-proname{
+    width:222px;
+    text-align:center;
+}
+.sc-proattr{
+    width:107px;
+    text-align:center;
+}
+.sc-proprice{
+    width:163px;
+    text-align:center;
+}
+.sc-pronums{
+    width:118px;
+    text-align:center;
+}
+.sc-actinfo{
+    width:157px;
+    text-align:center;
+}
+.sc-sum{
+    width:168px;
+    text-align:center;
+}
+.sc-handle{
+    width: 73px;
+    text-align:left;
+}
+.sc-currAddress-down{
+    width:100%;
+    min-height:233px;
+    height:auto!important;
+    height:233px;
+}
+.sc-currProSum{
+    width:100%;
+    height:39px;
+    border-bottom:1px solid #ccc;
+    background:#f5f4f9;
+}
+.sc-currProSum-down{
+    width:100%;
+    min-height:100px;
+    height:auto!important;
+    height:100px;
+}
+.sc-currProSum-down div{
+    border-bottom:1px solid #ccc;
+    width:100%;
+    height:100px;
+}
+.sc-currProSum-down div .checkbox{
+    width:75px;
+    height:60px;
+    padding-left:12px;
+    padding-top:40px;
+    float:left;
+}
+.sc-currProSum-down div .nth{
+    width:95px;
+    height:100px;
+}
+.sc-currProSum-down div .propic{
+    float:left;
+    width:95px;
+    height:98px;
+    padding-top:2px;
+
+}
+.sc-currProSum-down div .propic a{
+    display:block;
+    width:95px;
+    height:95px;
+}
+.sc-currProSum-down div .propic a img{
+    display:block;
+    width:95px;
+    height:95px;
+}
+.sc-currProSum-down div .proname{
+    float:left;
+    width:222px;
+    height:65px;
+    padding-top:35px;
+    text-align:center;
+}
+.proname-a{
+    font-size:12px;
+}
+.proname-a:hover{
+    color:#c8a985;
+}
+.sc-currProSum-down div .proattr{
+    float:left;
+    width:107px;
+    height:60px;
+    text-align:center;
+    padding-top:40px;
+}
+.sc-currProSum-down div .proprice{
+    float:left;
+    width:163px;
+    height:60px;
+    text-align:center;
+    font-weight:bold;
+    padding-top:40px;
+}
+.sc-currProSum-down div .pronum{
+    float:left;
+    width:108px;
+    height:70px;
+    padding-top:30px;
+    padding-left:10px;
+}
+.sc-currProSum-down div .pronum input{
+    width:44px;
+    height:19px;
+    outline:none;
+    text-align:center;
+    display:block;
+    margin:5px 3px 0 3px;
+    float:left;
+    border:1px solid #ccc;
+}
+.sc-currProSum-down div .pronum .cut,.sc-currProSum-down div .pronum .add{
+    width:23px;
+    height:23px;
+    float:left;
+    color:#fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:pointer;
+    font-weight:bold;
+    text-align:center;
+    line-height:23px;
+    font-size:15px;
+    margin-top:5px;
+    background:#c8a985;
+}
+.sc-currProSum-down div .actinfo{
+    float:left;
+    width:157px;
+    height:100px;
+}
+.sc-currProSum-down div .smallsum{
+    float:left;
+    width:168px;
+    height:60px;
+    text-align:center;
+    padding-top:40px;
+    font-weight:bold;
+}
+.sc-currProSum-down div .handle{
+    float:left;
+    width:73px;
+    height:80px;
+    padding-top:20px;
+}
+.not_yetbuy{
+    width:100%;
+    height:18px;
+    padding-top:70px;
+    text-align:center;
+    font-size:18px;
+}
+.go_accountbox{
+    width:100%;
+    height:35px;
+    padding-top:45px;
+    display:none;
+}
+.go_accountdiv1{
+   float:left;
+    width:86px;
+    height:35px;
+}
+.go_accountdiv1 span{
+    padding-left:10px;
+}
+.go_accountdiv1 a:hover{
+    color:#c8a985;
+}
+.go_accountdiv2{
+    float:right;
+    height:35px;
+    line-height:35px;
+}
+.click_account{
+    width:136px;
+    text-align:center;
+    font-size:14px;
+    color:#fff;
+    background:#d00;
+    cursor:pointer;
+}
+.pro_allprice{
+    width:87px;
+    color:#d00;
+    font-size:20px;
+    margin-right:20px;
+}
+.no_freight{
+    width:132px;
+}
+.already_choicenum{
+    width:78px;
+    margin-right:10px;
+}
+.already_choicenum span{
+    color:#d00;
+}
+.handle_delete{
+    width:100%;
+    height:24px;
+    color:blue;
+    cursor:pointer;
+    line-height:24px;
+}
+.move_tocollect{
+    width:100%;
+    height:24px;
+    color:blue;
+    cursor:pointer;
+    line-height:24px;
+}
+.pack{
+    color:#d00;
+    line-height:24px;
+    cursor:pointer;
+    width:100%;
+    height:24px;
+    text-align:center;
+}
+.pack span{
+    display:block;
+    width:20px;
+    height:20px;
+    float:left;
+    background:url(../images/shopcart/new_5luxbg.png) no-repeat -361px -51px;
+}

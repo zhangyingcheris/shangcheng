@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul,li,img,div{font-size:12px;float:left;list-style-type:none;text-align:center;margin:0;padding:0;}
+        .demo{
+            width:408px;
+            height:172px;
+            overflow:hidden;
+        }
+        .demo_div1{
+            width:816px;
+            height:172px;
+        }
+        .demo_div1 div{
+            float:left;
+        }
+        .demo ul{
+            width:408px;
+            height:172px;
+            clear:both;
+        }
+        .demo li{
+            width:102px;
+            float:left;
+        }
+        .demo img{
+            width:102px;
+            height:172px;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="demo" id="demo1">
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <ul>
+                    <li><img src="images/index/shop-div3-dv2pic2.jpg"></li>
+                    <li><img src="images/index/shop-div3-dv2pic3.jpg"></li>
+                    <li><img src="images/index/shop-div3-dv2pic4.jpg"></li>
+                    <li><img src="images/index/shop-div3-dv2pic5.jpg"></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>-->
+<!--第二个滚动图开始-->
+<div class="demo">
+    <div class="demo_div1">
+        <div class="demo_div1_1">
+            <ul>
+                <li><img src="images/index/shop-div3-dv2pic2.jpg"></li>
+                <li><img src="images/index/shop-div3-dv2pic3.jpg"></li>
+                <li><img src="images/index/shop-div3-dv2pic4.jpg"></li>
+                <li><img src="images/index/shop-div3-dv2pic5.jpg"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function startmarquee(lh,speed,delay,index){
+        var o=document.getElementsByClassName("demo")[0];
+        var o_div=o.getElementsByClassName("demo_div1_1")[0];
+        var str=o_div.innerHTML;
+        var newdiv=document.createElement("div");
+        newdiv.innerHTML=str;
+        console.log(newdiv);
+        o_div.parentNode.appendChild(newdiv);
+        var timer;
+        var p=false;
+        o.onmouseover=function(){ p = true;};         //lh:左移一次运动的距离
+        o.onmouseout=function(){ p = false;};         //speed:
+        function start(){                               //delay:运动一次后停留的时间
+//            console.log(o.scrollLeft);                //不用考虑index
+            timer = setInterval(Marquee,speed);
+            if(!p){
+                o.scrollLeft = o.scrollLeft + 3;
+//                console.log(o.scrollLeft );
+            }
+        }
+        /*////////////////////////////////////////*/
+        function Marquee(){
+//            console.log(o.scrollLeft );
+            if(o_div.offsetWidth-o.scrollLeft<=0){ //当窗口scrollLeft距离大于ul的宽度时，将scrollLeft置0
+                o.scrollLeft=o.scrollLeft-o_div.offsetWidth;
+            }
+            else{                                 //当窗口scrollLeft距离小于ul的宽度时
+                if(o.scrollLeft%lh!=0){           //如果scrollLeft不是图片宽度的整数倍，则scrollLeft依次加3px
+                    o.scrollLeft=o.scrollLeft+3;
+                }else{
+                    clearInterval(timer);
+                    setTimeout(start,delay);
+                }
+            }
+        }
+        /*///////////////////////////////////////*/
+        setTimeout(start,delay);
+    }
+    startmarquee(102,10,1500,1);//图片间停式滚动
+    //    startmarquee(102,30,1,2);//图片不间断滚动
+
+
+</script>
+
+</body>
+</html>

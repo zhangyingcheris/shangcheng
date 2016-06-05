@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{padding: 0;}
+			#zoom{
+				position: relative;
+				margin:50px; 
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			#small-box{
+				position: relative;
+				width: 350px;
+				height: 350px;
+				border: 1px solid #ccc;
+			}
+			#float-box{
+				position: absolute;
+				width: 218px;/*----------------350/800*500----------*/
+				height: 218px;
+				top:0;
+				left:0;
+				display: none;
+				background-color: rgba(155,155,155,0.5);
+				cursor: move;
+			}
+			#big-box{
+				display: none;
+				position: absolute;
+				left:372px;
+				width: 500px;
+				height:500px;
+				top:0;
+				border: 1px solid #ccc;
+				overflow: hidden;
+			}
+			#big-box img{
+				position: absolute;
+			}
+			
+			#piclist{
+				list-style: none;
+			}
+			#piclist li{
+				display: inline-block;	
+				border: 1px solid #ccc;
+			}
+			#piclist li.active{
+				border: 1px solid #f66;
+			}
+			#piclist li img{
+				width: 50px;
+				height:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zoom">
+			<div id="small-box">
+				<div id="float-box"></div>
+				<img src="img/s1.jpg" id="smallImg"/>
+			</div>
+			<div id="big-box">
+				<img src="img/b1.jpg"/>
+			</div>
+			<ul id="piclist">
+				<li>
+					<img src="img/s1.jpg"/>
+				</li>
+				<li>
+					<img src="img/s2.jpg"/>
+				</li>
+				<li>
+					<img src="img/s3.jpg"/>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var zoom = document.getElementById("zoom");
+		var smallBox = document.getElementById("small-box");
+		var floatBox = document.getElementById("float-box");
+		var bigBox = document.getElementById("big-box");
+		var img = bigBox.getElementsByTagName("img")[0];
+		var smallImg = document.getElementById("smallImg");
+		var picList = document.getElementById("piclist");
+		var olis = picList.getElementsByTagName("li");
+		var len = olis.length;
+		
+		smallBox.onmouseenter = function(){
+			floatBox.style.display = "block";
+			bigBox.style.display = "block";
+		}
+		smallBox.onmouseleave = function(){
+			floatBox.style.display = "none";
+			bigBox.style.display = "none";
+		}
+		
+		smallBox.onmousemove = function(ev){
+			var left = ev.pageX - zoom.offsetLeft - smallBox.offsetLeft - floatBox.offsetWidth/2;
+			var top = ev.pageY - zoom.offsetTop  - smallBox.offsetTop- floatBox.offsetHeight/2;
+			
+			if(left<0){
+				left = 0;
+			}else if(left > (smallBox.offsetWidth - floatBox.offsetWidth)){
+				left = smallBox.offsetWidth - floatBox.offsetWidth;
+			}
+			
+			if(top < 0 ){
+				top = 0;
+			}else if(top > (smallBox.offsetHeight - floatBox.offsetHeight)){
+				top = smallBox.offsetHeight - floatBox.offsetHeight;
+			}
+			
+			floatBox.style.left = left + "px";
+			floatBox.style.top = top + "px";
+			
+			var percentX = left/(smallBox.offsetWidth - floatBox.offsetWidth);
+			var percentY = top/(smallBox.offsetHeight - floatBox.offsetHeight);
+			console.log(percentX)
+			img.style.left = -percentX*(img.offsetWidth - bigBox.offsetWidth)+"px";
+			img.style.top = -percentY*(img.offsetHeight - bigBox.offsetHeight)+"px";
+			
+		}
+		
+		for(var i = 0; i < len; i++ ){
+			olis[i].onclick = (function(num){
+				return function (){
+				for(var j = 0; j < len; j++ ){
+					olis[j].className = "";
+				}	
+					olis[num].className = "active";
+					smallImg.setAttribute("src","img/s"+(num+1)+".jpg");
+					img.setAttribute("src","img/b"+(num+1)+".jpg");
+				}
+			})(i);
+		}
+		
+		
+		
+	</script>
+</html>

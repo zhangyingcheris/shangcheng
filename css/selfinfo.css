@@ -1,0 +1,339 @@
+@charset "utf-8";
+#header-contt{
+    height:30px;
+}
+.selfinfo-logobox{
+    width:100%;
+    height:110px;
+}
+.selfinfo-logo{
+    width:1100px;
+    height:110px;
+    margin:0 auto;
+}
+.selfinfo-logo a{
+    float:left;
+}
+.selfinfo-logoright{
+    width:570px;
+    height:45px;
+    float:left;
+    margin-left:100px;
+    margin-top:40px;
+}
+.selfinfo-logoright div a,.selfinfo-logoright div img{
+    float:left;
+    text-align:center;
+    line-height:43px;
+}
+.selfinfo-logoright div a{
+    margin-left:5px;
+}
+.selfinfo-logoright div a:hover{
+    color:#c8a985;
+}
+.selfinfo-logoright-div1,.selfinfo-logoright-div2,.selfinfo-logoright-div3{
+    height:45px;
+    float:left;
+    padding-left:1px;
+    margin-right:15px;
+    position:relative;
+    background:url(../images/selfinfo/header-logo-shadow.jpg) no-repeat left bottom;
+}
+.selfinfo-logoright-div1{
+    width:161px;
+}
+.selfinfo-logoright div a{
+    float:right;
+    margin-right:10px;
+}
+.selfinfo-logoright img{
+    margin-right:5px;
+    cursor:pointer;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.selfinfo-logoright-div2{
+    width:174px;
+}
+.selfinfo-logoright-div3{
+    width:187px;
+}
+/*header-nav//////////////////////////////////////////////////////*/
+.header-navbox{
+    width:100%;
+    height:46px;
+    background:#000 url(../images/selfinfo/headerbg.jpg) no-repeat center;
+}
+.header-nav{
+    width:1210px;
+    height:46px;
+    margin:0 auto;
+}
+.header-nav-div1{
+    width:1000px;
+    height:46px;
+    margin:0 auto;
+}
+.myfifth{
+    display:block;
+    width:130px;
+    height:38px;
+    line-height:38px;
+    text-align:center;
+    color:#fff;
+    float:left;
+    font-size:16px;
+    font-family:"黑体";
+}
+.indexoffifth{
+    display:block;
+    width:100px;
+    height:38px;
+    line-height:38px;
+    text-align:center;
+    color:#fff;
+    font-size:14px;
+    float:right;
+    font-family:"黑体";
+}
+.indexoffifth:hover{
+    color:#c8a985;
+}
+.main{
+    width:1000px;
+    height:700px;
+    margin:7px auto 15px;
+}
+.main-left{
+    width:155px;
+    height:699px;
+    float:left;
+    background:#fff;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow:  0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+.main-left dl dt,.main-left dl dd{
+    width:155px;
+    height:32px;
+    text-align:center;
+    line-height:32px;
+}
+.main-left dl dd{
+    line-height:30px;
+}
+.main-left dl dd a{
+    color:#333;
+}
+.main-left dl dt{
+    position:relative;
+    font-size:14px;
+    background:#c8a985;
+}
+.main-left dl dt span{
+    position:absolute;
+    left:20px;
+    top:13px;
+    display:block;
+    float:left;
+    width:10px;
+    height:6px;
+    background:url(../images/index/allbg2.png) no-repeat -476px -325px ;
+}
+.main-left dl dd a:hover{
+    color:#c8a985;
+    text-decoration:underline;
+}
+.main-right{
+    width:815px;
+    height:482px;
+    padding:0 10px;
+    background:#fff;
+    float:right;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow:  0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+.main-right-div1{
+    width:815px;
+    height:71px;
+    border-bottom:1px solid #ccc;
+}
+.main-right-div1-sp1{
+     display:block;
+    font-size:15px;
+    font-weight:bold;
+     width:68px;
+     height:35px;
+     border-bottom:2px solid #f66;
+     line-height:35px;
+     text-align:center;
+ }
+.main-right-div1-sp2{
+    display:block;
+    height:35px;
+    line-height:35px;
+}
+.main-right-div2{
+    width:200px;
+    height:300px;
+    padding-top:45px;
+    float:left;
+}
+.touxiang{
+    width:102px;
+    height:102px;
+    margin-left:20px;
+    border-radius:50%;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow:  0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    background:url(../images/selfinfo/user_header.jpg) no-repeat center;
+}
+.changetouxiang{
+    width:75px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin-left:35px;
+}
+.changetouxiang a{
+    font-size:14px;
+    color:#333;
+    font-family:"黑体";
+}
+.changetouxiang a:hover{
+    color:#c8a985;
+}
+.main-right-div3{
+    width:615px;
+    height:345px;
+    float:left;
+}
+.main-right-div3-dv1,.main-right-div3-dv2,.main-right-div3-dv3,.main-right-div3-dv4,.main-right-div3-dv5,.main-right-div3-dv6,.main-right-div3-dv7,.main-right-div3-dv8{
+    height:40px;
+}
+.main-right-div3-dv1{
+    margin-top:30px;
+}
+#lable{
+    display:block;
+    width:100px;
+    height:40px;
+    text-align:left;
+    line-height:40px;
+    float:left;
+}
+#selfinfo-username{
+    height:40px;
+    line-height:40px;
+    float:left;
+}
+.main-right-div3-dv2{
+    height:40px;
+}
+#selfinfo-usersex{
+    width:182px;
+    height:26px;
+    border:1px solid #ccc;
+    float:left;
+    outline:none;
+    margin-top:5px;
+}
+#selfinfo-sex{
+    display:block;
+    float:left;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    text-align:left;
+}
+#selfinfo-sex span{
+    margin-right:5px;
+}
+.main-right-div3-dv3 div{
+    float:left;
+    width:100px;
+    height:30px;
+    padding-top:10px;
+}
+.main-right-div3-dv3 span{
+    float:left;
+    color:#f66;
+}
+.selfinfo-useremail{
+    width:100px;
+    height:40px;
+    line-height:40px;
+    float:left;
+    text-align:left;
+}
+.main-right-div3-dv4 input{
+    margin-right:10px;
+    margin-bottom:5px;
+    outline:none;
+}
+.main-right-div3-dv4 a:hover{
+    color:#c8a985;
+}
+#lable span{
+    color:red;
+}
+#usernums{
+    width:200px;
+    line-height:40px;
+    height:40px;
+    float:left;
+}
+.main-right-div3-dv5 #lable span,.main-right-div3-dv6 #lable span{
+    margin-right:5px;
+    color:#f66;
+}
+
+#userbirthday{
+    width:300px;
+    height:32px;
+    float:left;
+    padding-top:8px;
+}
+#userbirthday select{
+    margin-right:10px;
+    outline:none;
+}
+#incomt{
+    margin-top:10px;
+    outline:none;
+}
+#lable-right{
+    height:32px;
+    width:100px;
+    float:left;
+    padding-top:8px;
+}
+#lable-right select{
+    outline:none;
+}
+#userjob{
+    height:32px;
+    padding-top:8px;
+    float:left;
+}
+#userjob select{
+    outline:none;
+}
+#selfinfo-submit{
+    width:64px;
+    height:25px;
+    text-align:center;
+    line-height:25px;
+    background:#c8a985;
+    color:#fff;
+    padding-left:5px;
+    font-size:13px;
+    font-family:"黑体";
+    margin:15px 0 15px 150px;
+    cursor:pointer;
+    letter-spacing:6px;
+}

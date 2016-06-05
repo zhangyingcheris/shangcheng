@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset,
+legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var {
+    font-style:normal;
+    font-weight:normal;
+}
+ul, ol { list-style:none; }
+body {
+    color:#333;
+    padding:5px 0;
+    font:12px "SimSun","����","Arial Narrow",HELVETICA;
+    background:#fff;
+    overflow-x:hidden;
+}
+a {
+    color:#666;
+    text-decoration:none;
+}
+.confirmo_mainbox{
+    width:1190px;
+    min-height:1269px;
+    height:auto!important;
+    height:1269px;
+    padding-top:20px;
+    margin:20px auto;
+}
+.confirm_top{
+    width:100%;
+    height:47px;
+}
+.conf_curraddress{
+    width:700px;
+    height:47px;
+    background:url(../images/shopcart/cart-step.jpg) no-repeat 0 -56px;
+    float:right;
+}
+.conf_curraddress a{
+    display:block;
+    width:200px;
+    height:47px;
+}
+.shouhuo_info,.songhuo_time,.pay_way{
+    width:1170px;
+    height:40px;
+    background:#ebeaea;
+    margin:30px 0 5px 0;
+    padding-left:20px;
+    line-height:40px;
+}
+.addressbox{
+    width:1148px;
+    height:167px;
+    padding:20px;
+    display:block;
+    border:1px solid #e5e5e5;
+}
+.addressbox_down{
+    width:1167px;
+    height:29px;
+    display:none;
+    padding-left:20px;
+    line-height:29px;
+    border:1px solid #ccc;
+}
+.addressbox_down .buy_addr{
+    width:800px;
+    float:left;
+    height:29px;
+    line-height:29px;
+    font-weight:bold;
+}
+.addressbox_down .rewrite_addr{
+    float:right;
+    color:#d00;
+    margin-right:15px;
+    cursor:pointer;
+}
+.songhuo_timedetail{
+    width:1148px;
+    height:77px;
+    border:1px solid #ccc;
+    padding:20px;
+}
+.addressbox_div1{
+    width:100%;
+    height:27px;
+    padding-top:3px;
+    margin-bottom:5px;
+}
+.addressbox_div1 input{
+    outline:none;
+}
+.addressbox_div2{
+    width:100%;
+    height:30px;
+    margin-bottom:5px;
+}
+.addressbox_div2 lable{
+    padding-top:6px;
+}
+.addressbox_div2 lable,.addressbox_div2 div{
+    float:left;
+}
+.addressbox_div2 .main{
+    margin-left:5px;
+}
+.addressbox_div3{
+    width:100%;
+    height:27px;
+    margin-bottom:5px;
+    padding-top:3px;
+}
+.addressbox_div3 input{
+    outline:none;
+}
+.addressbox_div4{
+    width:100%;
+    height:27px;
+    margin-bottom:5px;
+    padding-top:3px;
+}
+#confirm_phonenum{
+    outline:none;
+}
+.addressbox_div5{
+    width:100%;
+    height:30px;
+}
+.addressbox_div5 div{
+    height:30px;
+    float:left;
+    cursor:pointer;
+}
+.add_and_save{
+    width:94px;
+    height:25px;
+    text-align:center;
+    line-height:30px;
+    color:#fff;
+    background:#d00;
+    margin-right:10px;
+}
+.add_and_savedown{
+    width:58px;
+    height:25px;
+    text-align:center;
+    line-height:30px;
+    color:#fff;
+    background:#999;
+}
+.pay_waydown{
+    width:1148px;
+    height:31px;
+    padding:20px;
+    border:1px solid #ccc;
+}
+.zhifubao{
+    width:107px;
+    height:31px;
+    float:left;
+    background:url(../images/confirmorder/bgpic1.jpg) no-repeat center;
+}
+.more_pay{
+    width:60px;
+    height:25px;
+    color:#d00;
+    line-height:25px;
+    margin-top:5px;
+    float:right;
+    cursor:pointer;
+}
+.online_pay{
+    width:1150px;
+    height:340px;
+    padding:20px;
+    display:none;
+}
+.online_pay div{
+    width:1150px;
+}
+.online_pay_div1,.online_pay_div3,.online_pay_div4{
+    height:50px;
+}
+.online_pay .online_pay_div2{
+    width:1068px;
+    height:134px;
+    padding:20px;
+}
+.online_pay_div5{
+    height:35px;
+}
+.online_pay_div1{
+    line-height:60px;
+ }
+.online_pay_div1 span{
+    height:20px;
+    padding-bottom:3px;
+}
+.online_pay_div1 input{
+    margin-top:18px;
+}
+.online_pay_div2 div{
+    width:138px;
+    height:39px;
+    float:left;
+    padding-bottom:8px;
+    margin-right:15px;
+}
+.radio_box{
+    width:13px;
+    height:39px;
+    float:left;
+}
+.online_pay_div2 div img{
+    width:120px;
+    height:31px;
+    float:right;
+    margin-top:5px;
+}
+.online_pay_div2 div input{
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    margin-top:15px;
+}
+.online_pay_div3,.online_pay_div4{
+    line-height:50px;
+}
+.online_pay_div5 .save_payway{
+    width:106px;
+    height:25px;
+    text-align:center;
+    line-height:25px;
+    background:#d00;
+    color:#fff;
+    float:left;
+    cursor:pointer;
+    margin-right:10px;
+}
+.online_pay_div5 .online_pay_delete{
+    width:58px;
+    height:25px;
+    cursor:pointer;
+    text-align:center;
+    line-height:25px;
+    background:#999;
+    color:#fff;
+    float:left;
+}
+.pro_file{
+    width:1170px;
+    height:40px;
+    padding-left:20px;
+    background:#ebeaea;
+}
+.pro_file div{
+    float:left;
+    height:40px;
+    line-height:40px;
+}
+.pro_file .pro_file_div2{
+    display:block;
+    height:40px;
+    float:right;
+    padding-right:20px;
+    line-height:40px;
+    color:#d00;
+    cursor:pointer;
+}
+.pro_filedown{
+    width:1188px;
+    height:186px;
+    border:1px solid #ccc;
+}
+.pro_filedown_div1{
+    float:left;
+    width:296px;
+    height:154px;
+    padding:16px;
+    border-right:1px solid #ccc;
+}
+.pro_filedown_div1 div{
+    width:145px;
+    height:31px;
+}
+.pro_filedown_div1_dv2{
+    background:url(../images/confirmorder/peisongbg.jpg) no-repeat center;
+}
+.pro_filedown_div2{
+    float:left;
+    padding-left:18px;
+    width:755px;
+    height:186px;
+}
+.pro_filedown_div2_dv1{
+    padding-top:16px;
+}
+.pro_filedown_div2_dv2{
+    width:773px;
+    height:100px;
+    margin-top:20px;
+    float:left;
+}
+.pro_filedown_div2_dv2 div{
+    float:left;
+}
+.pro_file_picbox{
+    width:100px;
+    height:100px;
+}
+.pro_file_picbox img{
+    width:100px;
+    height:100px;
+}
+.pro_file_namebox{
+    width:246px;
+    height:70px;
+    padding:20px 11px 10px 11px;
+    line-height:30px;
+    text-align:center;
+    margin-left:10px;
+}
+.pro_file_stylebox{
+    width:62px;
+    height:60px;
+    padding-top:40px;
+    text-align:center;
+    margin-left:10px;
+}
+.pro_file_numbox{
+    width:150px;
+    height:60px;
+    padding-top:40px;
+    text-align:center;
+}
+.pro_file_pricebox{
+    width:104px;
+    height:60px;
+    padding-top:40px;
+    text-align:center;
+}
+.confirmorder_last{
+    width:1150px;
+    height:210px;
+    border-bottom:1px solid #ccc;
+    padding:0 20px 0 20px;
+}
+.confirmorder_last_div1{
+    width:400px;
+    height:130px;
+    float:left;
+    padding-top:30px;
+}
+.confirmorder_last_div2{
+    width:300px;
+    height: 130px;
+    padding-top:30px;
+    float:right;
+}
+.confirmorder_last_div1 div{
+    height:25px;
+    line-height:25px;
+    margin-bottom:5px;
+}
+.confirmorder_last_div1 div select{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.confirmorder_last_div2 div{
+    height:35px;
+    line-height:35px;
+}
+.confirmorder_last_div2 div span{
+    display:block;
+    width:140px;
+    height:35px;
+    float:left;
+    text-align:right;
+}
+#reality_price{
+    color:#d00;
+    font-size:18px;
+}
+.final_pay{
+    width:100%;
+    height:35px;
+    float:left;
+}
+.final_pay a{
+    width:142px;
+    height:35px;
+    display:block;
+    text-align:center;
+    line-height:35px;
+    color:#fff;
+    background:#d00;
+    float:right;
+}
